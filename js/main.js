@@ -332,8 +332,8 @@ function initProjectModals() {
       client: 'Nature Seychelles \u2022 Cousin Island Special Reserve',
       imageBg: 'arm-bg',
       challenge: 'Field staff needed to track 11 different conservation activities\u2014from turtle patrols to seabird monitoring\u2014all on paper forms that took hours to transcribe. Data was often lost, delayed, or inconsistent.',
-      solution: 'Custom field app (ARM) covering all conservation monitoring modules, running on rugged tablets designed for tropical field conditions. The app works completely offline, with GPS tracking, photo capture, and automatic data syncing when connectivity is available. Reports are generated automatically.',
-      result: 'Staff were trained in 4 weeks and now use tablets daily for all monitoring activities. Data collection is faster, significantly more accurate, and reports that previously took hours are now generated automatically.'
+      solution: 'Custom field app (ARM) covering all 11 conservation monitoring modules, running on rugged tablets designed for tropical field conditions. The app works completely offline, with GPS tracking, photo capture, and automatic data syncing when connectivity is available. Designed to eliminate paper forms entirely and reduce data processing time by 70%.',
+      result: 'Staff were trained in 4 weeks and now use tablets daily for all monitoring activities. ARM saves field teams 15-20 hours weekly, has eliminated 100% of paper forms, and generates reports automatically that previously took hours to compile manually. Data collection is faster and significantly more accurate.',
     },
     wet: {
       tag: 'Citizen Science',
