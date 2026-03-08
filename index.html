@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conservation Tech Solutions — Custom mobile apps and digital tools for wildlife conservation, field research, and community engagement.">
+  <meta name="keywords" content="conservation technology, wildlife apps, field data collection, citizen science, GPS tracking, environmental monitoring">
+  <meta name="author" content="Jessica Nasica">
+  <title>JNL Data Solution — Technology for Wildlife Conservation</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css?v=21">
+  <style>
+    /* Fix: modal overlay was blocking all clicks on the page */
+    .modal-overlay { pointer-events: none !important; }
+    .modal-overlay.visible { pointer-events: auto !important; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container">
+      <a href="#" class="logo">JNL Data Solution<span class="logo-dash"> - </span><br class="logo-break">Your Conservation Tech Solution</a>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+      </ul>
+    </nav>
+    <div class="nav-overlay"></div>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <!-- Slideshow Background -->
+      <div class="hero-slideshow">
+        <div class="slideshow-container">
+          <div class="slide slide-active">
+            <img src="assets/slideshow/slide-1.jpg" alt="Conservation work on Cousin Island in Seychelles">
+          </div>
+          <div class="slide">
+            <img src="assets/slideshow/slide-2.jpg" alt="Field Testing of the ARM app on Cousin Island">
+          </div>
+          <div class="slide">
+            <img src="assets/slideshow/slide-7blur.png" alt="Field data collection on Cousin Island Special Reserve">
+          </div>
+          <div class="slide">
+            <img src="assets/slideshow/slide-4.jpg" alt="Wildlife monitoring with the ARM app">
+          </div>
+          <div class="slide">
+            <img src="assets/slideshow/slide-6.jpg" alt="Conservation technology">
+          </div>
+          <div class="slide">
+            <img src="assets/slideshow/slide-5.jpg" alt="Marine conservation">
+          </div>
+          <div class="slide">
+            <img src="assets/slideshow/slide-3b.png" alt="Reporting with NGO Nature Seychelles">
+          </div>
+        </div>
+        <div class="slideshow-overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <h1 class="hero-title">Technology for Wildlife Conservation</h1>
+        <p class="hero-tagline">Mobile apps and digital tools that help protect wildlife, support field research, and empower communities to participate in conservation</p>
+        <a href="#services" class="btn btn-hero">
+          See How We Can Help
+          <i data-lucide="arrow-down" class="btn-icon"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problems" class="problem-section">
+      <div class="container">
+        <h2 class="section-title">The challenges you face</h2>
+        <div class="problems-grid animate-stagger">
+          <div class="problem-card">
+            <div class="problem-icon">
+              <i data-lucide="wifi-off"></i>
+            </div>
+            <h3>Remote locations with no internet</h3>
+            <p>Field teams need tools that work offline and sync when back online</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">
+              <i data-lucide="clipboard-list"></i>
+            </div>
+            <h3>Paper data is hard to manage</h3>
+            <p>Converting field notes to digital reports takes too much time</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">
+              <i data-lucide="users"></i>
+            </div>
+            <h3>Communities want to help</h3>
+            <p>Local people need simple tools to participate in conservation</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">
+              <i data-lucide="settings"></i>
+            </div>
+            <h3>Generic apps don't fit your needs</h3>
+            <p>Off-the-shelf software doesn't match your specific workflows</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="services" class="solutions-section">
+      <div class="container">
+        <h2 class="section-title section-title--teal">Custom Solutions for Conservation Challenges</h2>
+        <p class="section-intro">We build mobile apps and digital systems specifically designed for conservation work—tools that work in the field, are easy to use, and fit your exact needs.</p>
+
+        <div class="solutions-grid">
+
+          <!-- Solution 1 -->
+          <div class="solution-card" data-card-id="1" id="services-1">
+            <div class="solution-header">
+              <div class="solution-number">01</div>
+              <h3 class="solution-title">Field Data Collection Apps</h3>
+            </div>
+            <p class="solution-description">Custom apps for collecting wildlife observations, habitat data, and research information. Works completely offline and syncs automatically when you have internet.</p>
+            <ul class="solution-features">
+              <li><i data-lucide="check-circle-2"></i><span>Works without internet connection</span></li>
+              <li><i data-lucide="check-circle-2"></i><span>GPS tracking and mapping</span></li>
+              <li><i data-lucide="check-circle-2"></i><span>Photo and audio recording</span></li>
+              <li><i data-lucide="check-circle-2"></i><span>Custom forms for your workflows</span></li>
+            </ul>
+            <div class="solution-uses">
+              <strong>Perfect for:</strong> Wildlife surveys & censuses, turtle nest monitoring, habitat assessments, invasive species tracking, illegal activity reporting
+            </div>
+            <div class="solution-details">
+              <p class="solution-tech-note">Common use cases span wildlife surveys, habitat monitoring, and research data collection across different species and ecosystems. Key benefits include faster data entry in the field, elimination of transcription errors from paper forms, and real-time insights that support immediate decision-making. Development typically takes 2-4 months depending on complexity. An effective field data app is customized to your exact workflows, works reliably offline in remote conditions, and makes data collection faster than paper while ensuring data quality through built-in validation.</p>
+              <a href="#contact" class="btn btn-small">Discuss Your Project</a>
+            </div>
+            <button class="solution-toggle" aria-expanded="false" aria-label="Show more details">
+              <i data-lucide="chevron-down"></i>
+            </button>
+          </div>
+
+          <!-- Solution 2 -->
+          <div class="solution-card" data-card-id="2" id="services-2">
+            <div class="solution-header">
+              <div class="solution-number">02</div>
+              <h3 class="solution-title">Citizen Science Platforms</h3>
+            </div>
+            <p class="solution-description">Easy-to-use apps that let community members, tourists, and volunteers contribute to conservation research. Available in local languages.</p>
+            <ul class="solution-features">
+              <li><i data-lucide="check-circle-2"></i><span>Simple interface for non-experts</span></li>
+              <li><i data-lucide="check-circle-2"></i><span>Serves as an outreach and education tool</span></li>
+              <li><i data-lucide="check-circle-2"></i><span>Photo submissions with location</span></li>
+              <li><i data-lucide="check-circle-2"></i><span>Data validation and quality control</span></li>
+            </ul>
+            <div class="solution-uses">
+              <strong>Perfect for:</strong> Beach cleanups, habitat monitoring, biodiversity records, marine debris tracking, community environmental projects
+            </div>
+            <div class="solution-details">
+              <p class="solution-tech-note">Citizen science significantly increases community engagement and local ownership of conservation efforts. Community members can reliably collect observation data, photo documentation, location-based records, and environmental indicators when given the right tools. Essential accessibility features include full offline capability for areas without connectivity, multilingual interfaces in local languages, and simplified workflows that don't require technical training. The measurable impact includes broader geographic coverage, increased monitoring frequency, stronger community buy-in for conservation initiatives, and valuable educational opportunities for participants.</p>
+              <a href="#contact" class="btn btn-small">Discuss Your Project</a>
+            </div>
+            <button class="solution-toggle" aria-expanded="false" aria-label="Show more details">
+              <i data-lucide="chevron-down"></i>
+            </button>
+          </div>
+
+          <!-- Solution 3 -->
+          <div class="solution-card" data-card-id="3" id="services-3">
+            <div class="solution-header">
+              <div class="solution-number">03</div>
+              <h3 class="solution-title">Wildlife Digital Tracking</h3>
+            </div>
+            <p class="solution-description">Track animal movements and monitor protected areas using GPS devices and mapping technology. Get alerts when animals enter or leave specific zones.</p>
+            <ul class="solution-features">
+              <li><i data-lucide="check-circle-2"></i><span>Real-time location monitoring</span></li>
+              <li><i data-lucide="check-circle-2"></i><span>Geofencing with automatic alerts</span></li>
+              <li><i data-lucide="check-circle-2"></i><span>Long battery life (months/years)</span></li>
+              <li><i data-lucide="check-circle-2"></i><span>Can be implemented in remote areas</span></li>
+            </ul>
+            <div class="solution-uses">
+              <strong>Perfect for:</strong> Wildlife tracking, endangered species monitoring, movement studies and home range analysis, protected area management, research projects
+            </div>
+            <div class="solution-details">
+              <p class="solution-tech-note">Digital tracking provides crucial insights into animal movement patterns, habitat use, and behavior that would be impossible to gather through observation alone. Geofencing creates virtual boundaries around specific areas—such as protected zones, nesting sites, or areas with human-wildlife conflict risk. When an animal crosses these boundaries, you receive instant alerts, enabling rapid response to potential threats or concerning movements. This is invaluable for preventing animals from entering dangerous areas like roads or human settlements, monitoring whether individuals are staying within protected habitats, and understanding how animals use different parts of their range throughout the day or season. Real-time location data helps conservation teams make informed decisions quickly, whether that's adjusting management strategies, investigating sudden changes in movement patterns, or responding to wildlife emergencies before situations escalate.</p>
+              <a href="#contact" class="btn btn-small">Discuss Your Project</a>
+            </div>
+            <button class="solution-toggle" aria-expanded="false" aria-label="Show more details">
+              <i data-lucide="chevron-down"></i>
+            </button>
+          </div>
+
+          <!-- Solution 4 -->
+          <div class="solution-card" data-card-id="4" id="services-4">
+            <div class="solution-header">
+              <div class="solution-number">04</div>
+              <h3 class="solution-title">Data Management & Reporting</h3>
+            </div>
+            <p class="solution-description">Turn field data into useful insights with automated reports, data visualization, and secure cloud storage. Share reports with funders and stakeholders easily.</p>
+            <ul class="solution-features">
+              <li><i data-lucide="check-circle-2"></i><span>Automatic report generation</span></li>
+              <li><i data-lucide="check-circle-2"></i><span>Real-time charts and data visualization</span></li>
+              <li><i data-lucide="check-circle-2"></i><span>Secure cloud backup</span></li>
+              <li><i data-lucide="check-circle-2"></i><span>Export to Excel, PDF, or other formats in one click</span></li>
+            </ul>
+            <div class="solution-uses">
+              <strong>Perfect for:</strong> Funder reports, annual summaries, research analysis, trend monitoring, team dashboards
+            </div>
+            <div class="solution-details">
+              <p class="solution-tech-note">Common report types include donor/funder reports with key metrics and outcomes, scientific summaries for research publications, compliance documentation for regulatory requirements, and internal dashboards for team coordination. Data security includes encrypted cloud storage with automatic backups, role-based access controls, and audit trails of who accessed what data. Stakeholder permissions can be customized so field staff, managers, researchers, and funders each see appropriate data levels. Seamless integration with field data collection apps means reports auto-populate with fresh data, eliminating manual compilation and reducing reporting time from days to minutes.</p>
+              <a href="#contact" class="btn btn-small">Discuss Your Project</a>
+            </div>
+            <button class="solution-toggle" aria-expanded="false" aria-label="Show more details">
+              <i data-lucide="chevron-down"></i>
+            </button>
+          </div>
+
+          <!-- Solution 5 -->
+          <div class="solution-card" data-card-id="5" id="services-5">
+            <div class="solution-header">
+              <div class="solution-number">05</div>
+              <h3 class="solution-title">Facility Management Systems</h3>
+            </div>
+            <p class="solution-description">Digital systems for managing breeding programs, nurseries, rehabilitation centers, and research facilities. Track individual animals, maintenance, and daily operations.</p>
+            <ul class="solution-features">
+              <li><i data-lucide="check-circle-2"></i><span>Individual animal/plant tracking</span></li>
+              <li><i data-lucide="check-circle-2"></i><span>Maintenance scheduling</span></li>
+              <li><i data-lucide="check-circle-2"></i><span>Health and breeding records</span></li>
+              <li><i data-lucide="check-circle-2"></i><span>Equipment and supply management</span></li>
+            </ul>
+            <div class="solution-uses">
+              <strong>Perfect for:</strong> Coral nurseries, turtle hatcheries, rescue centers, botanical gardens, breeding programs
+            </div>
+            <div class="solution-details">
+              <p class="solution-tech-note">Core modules include individual animal/plant tracking with unique IDs and life histories, inventory management for supplies and equipment, maintenance scheduling for tanks/enclosures/systems, and detailed health and breeding records. Systems scale from small rescue centers with dozens of individuals to large breeding facilities with thousands of specimens. Compliance and record-keeping benefits include audit-ready documentation, historical trends for regulatory reporting, and standardized data collection across staff members. Long-term data analysis reveals program improvement opportunities like optimal breeding conditions, mortality patterns, and resource allocation efficiency.</p>
+              <a href="#contact" class="btn btn-small">Discuss Your Project</a>
+            </div>
+            <button class="solution-toggle" aria-expanded="false" aria-label="Show more details">
+              <i data-lucide="chevron-down"></i>
+            </button>
+          </div>
+
+          <!-- Solution 6 -->
+          <div class="solution-card" data-card-id="6" id="services-6">
+            <div class="solution-header">
+              <div class="solution-number">06</div>
+              <h3 class="solution-title">Training & Ongoing Support</h3>
+            </div>
+            <p class="solution-description">Complete training for your team plus ongoing technical support to keep everything running smoothly. We don't just deliver software—we make sure your team can use it.</p>
+            <ul class="solution-features">
+              <li><i data-lucide="check-circle-2"></i><span>On-site staff training</span></li>
+              <li><i data-lucide="check-circle-2"></i><span>User manuals and guides</span></li>
+              <li><i data-lucide="check-circle-2"></i><span>Remote technical support</span></li>
+              <li><i data-lucide="check-circle-2"></i><span>Updates and improvements</span></li>
+            </ul>
+            <div class="solution-uses">
+              <strong>Perfect for:</strong> Ensuring successful app adoption, building team confidence, maintaining long-term systems
+            </div>
+            <div class="solution-details">
+              <p class="solution-tech-note">Technology only works if people use it. Our training programs are tailored to your team's skill level to ensure long-term success. Training delivery includes hands-on field training sessions where staff learn by doing, remote video training for distributed teams, and comprehensive user documentation with screenshots and step-by-step guides. Support response times are typically within 24 hours for questions and issues, with critical bug fixes prioritized immediately. Ongoing maintenance plans include regular software updates, security patches, feature enhancements based on user feedback, and performance optimization. The capacity building approach focuses on empowering your team to handle routine troubleshooting independently through train-the-trainer sessions, troubleshooting guides, and building internal champions who can support their colleagues.</p>
+              <a href="#contact" class="btn btn-small">Discuss Your Project</a>
+            </div>
+            <button class="solution-toggle" aria-expanded="false" aria-label="Show more details">
+              <i data-lucide="chevron-down"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process-section">
+      <div class="container">
+        <h2 class="section-title">How We Work With You</h2>
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <h3>Understand Your Needs</h3>
+            <p>We talk with your team to understand your workflows, challenges, and what you're trying to achieve</p>
+          </div>
+          <div class="process-arrow" aria-hidden="true">
+            <i data-lucide="arrow-right"></i>
+          </div>
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <h3>Design the Solution</h3>
+            <p>We create a custom system that fits your specific needs and get your feedback</p>
+          </div>
+          <div class="process-arrow" aria-hidden="true">
+            <i data-lucide="arrow-right"></i>
+          </div>
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <h3>Build & Test</h3>
+            <p>We develop the app, test it with your team, and refine based on real use</p>
+          </div>
+          <div class="process-arrow" aria-hidden="true">
+            <i data-lucide="arrow-right"></i>
+          </div>
+          <div class="process-step">
+            <div class="step-number">4</div>
+            <h3>Train & Launch</h3>
+            <p>We train your staff and support you during rollout and beyond</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="section-title section-title--teal">Real Projects, Real Results</h2>
+        <div class="projects-grid animate-stagger">
+
+          <!-- Project 1: ARM -->
+          <div class="project-card" data-project="arm" tabindex="0" role="button" aria-label="View ARM project details">
+            <div class="project-image arm-bg">
+              <img src="assets/images/arm-training.jpg" alt="Field staff training with tablets on Cousin Island beach" loading="lazy">
+              <div class="project-image-overlay">
+                <span class="project-view-label"><i data-lucide="expand"></i> View Case Study</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-badges">
+                <span class="project-tag">Field Data Collection</span>
+                <span class="project-status project-status--implemented">Implemented</span>
+              </div>
+              <h3 class="project-title">Complete Reserve Management System</h3>
+              <p class="project-client">Nature Seychelles &bull; Cousin Island</p>
+              <p class="project-summary"><strong>The Challenge:</strong> Field staff needed to track 11 different conservation activities—all on paper forms that took hours to transcribe.</p>
+            </div>
+          </div>
+
+          <!-- Project 2: WET -->
+          <div class="project-card" data-project="wet" tabindex="0" role="button" aria-label="View WET project details">
+            <div class="project-image wet-bg">
+              <img src="assets/images/mangrove-wetland.jpg" alt="Aerial view of mangrove wetland and coastline" loading="lazy">
+              <div class="project-image-overlay">
+                <span class="project-view-label"><i data-lucide="expand"></i> View Case Study</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-badges">
+                <span class="project-tag">Citizen Science</span>
+                <span class="project-status project-status--ongoing">Ongoing</span>
+              </div>
+              <h3 class="project-title">Community Environmental Monitoring</h3>
+              <p class="project-client">Project details temporarily confidential &bull; client and location withheld</p>
+              <p class="project-summary"><strong>The Challenge:</strong> Local communities wanted to participate in environmental monitoring but needed a tool that non-experts could use without specialized training.</p>
+            </div>
+          </div>
+
+          <!-- Project 3: GPS Tracking -->
+          <div class="project-card" data-project="tracking" tabindex="0" role="button" aria-label="View GPS Tracking project details">
+            <div class="project-image tracking-bg">
+              <img src="assets/images/tortoise-tracking.jpg" alt="Researcher using tablet to track Aldabra giant tortoise" loading="lazy">
+              <div class="project-image-overlay">
+                <span class="project-view-label"><i data-lucide="expand"></i> View Case Study</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-badges">
+                <span class="project-tag">Wildlife Tracking</span>
+                <span class="project-status project-status--ongoing">Ongoing</span>
+              </div>
+              <h3 class="project-title">Automated Tortoise Tracking</h3>
+              <p class="project-client">Nature Seychelles &bull; Cousin Island</p>
+              <p class="project-summary"><strong>The Challenge:</strong> The reserve conservation team needed to track Aldabra giant tortoises across the entire reserve year-round.</p>
+            </div>
+          </div>
+
+          <!-- Project 4: Coral Facility -->
+          <div class="project-card" data-project="coral" tabindex="0" role="button" aria-label="View Coral Facility project details">
+            <div class="project-image coral-bg">
+              <img src="assets/images/coral-facility-AI.png" alt="Coral nursery facility with monitoring systems" loading="lazy">
+              <span class="ai-caption">AI-generated picture</span>
+              <div class="project-image-overlay">
+                <span class="project-view-label"><i data-lucide="expand"></i> View Case Study</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-badges">
+                <span class="project-tag">Facility Management</span>
+                <span class="project-status project-status--ongoing">Ongoing</span>
+              </div>
+              <h3 class="project-title">Conservation Facility Management System</h3>
+              <p class="project-client">Project details temporarily confidential &bull; client and location withheld</p>
+              <p class="project-summary"><strong>The Challenge:</strong> A conservation facility needed a digital system to track specimens, manage routine maintenance tasks, and monitor conditions across multiple units. Paper-based tracking was inefficient and made it difficult to stay on top of schedules.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="about" class="clients-section">
+      <div class="container">
+        <h2 class="section-title">Who We Work With</h2>
+        <div class="clients-grid animate-stagger">
+          <div class="client-card">
+            <div class="client-icon">
+              <i data-lucide="building-2"></i>
+            </div>
+            <h3>Conservation Organizations</h3>
+            <p>NGOs, wildlife trusts, marine reserves, and protected area managers who need custom tools for their specific conservation work</p>
+          </div>
+          <div class="client-card">
+            <div class="client-icon">
+              <i data-lucide="flask-conical"></i>
+            </div>
+            <h3>Research Teams</h3>
+            <p>Academic researchers, field biologists, and universities conducting long-term wildlife studies and population monitoring</p>
+          </div>
+          <div class="client-card">
+            <div class="client-icon">
+              <i data-lucide="globe"></i>
+            </div>
+            <h3>Community Groups</h3>
+            <p>Local environmental initiatives, community conservation projects, and citizen science programs engaging the public</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready to Improve Your Conservation Work?</h2>
+        <p>Let's talk about your specific needs and how we can build the right solution for you.</p>
+        <div class="cta-buttons">
+          <a href="#contact" class="btn btn-light">
+            <i data-lucide="mail"></i>
+            Get in Touch
+          </a>
+          <a href="mailto:jessicanasica@gmail.com?subject=Schedule a Call" class="btn btn-outline-light">
+            <i data-lucide="calendar"></i>
+            Schedule a Call
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title section-title--teal">Get in Touch</h2>
+        <p class="section-intro">Tell us about your project and we'll get back to you within 24 hours.</p>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name <span class="required">*</span></label>
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name">
+              <span class="error-message" role="alert" hidden>Please enter your name</span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email <span class="required">*</span></label>
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="your@email.com">
+              <span class="error-message" role="alert" hidden>Please enter a valid email</span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="organization">Organization</label>
+              <input type="text" id="organization" name="organization" autocomplete="organization" placeholder="Your organization (optional)">
+            </div>
+            <div class="form-group">
+              <label>Project Type <span style="font-weight: 400; font-size: 0.9em;">(select all that apply)</span></label>
+              <div class="checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="project-type" value="field-app">
+                  <span>Field Data Collection</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="project-type" value="citizen-science">
+                  <span>Citizen Science</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="project-type" value="digital-tracking">
+                  <span>Digital Tracking</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="project-type" value="data-management">
+                  <span>Data Management</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="project-type" value="facility">
+                  <span>Facility Management</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="project-type" value="other" id="project-type-other">
+                  <span>Other</span>
+                </label>
+              </div>
+              <div class="other-details" id="other-details" hidden>
+                <input type="text" id="other-project-details" name="other-project-details" placeholder="Please specify...">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message <span class="required">*</span></label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project, challenges, and what you're looking for..."></textarea>
+            <span class="error-message" role="alert" hidden>Please enter a message</span>
+          </div>
+          <button type="submit" class="btn btn-submit" id="submit-btn">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-loading" hidden>Sending...</span>
+          </button>
+          <div class="success-message" role="status" hidden>
+            <i data-lucide="check-circle"></i>
+            <span>Thanks! We'll respond within 24 hours.</span>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Project Modal -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden style="display:none">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal">
+        <i data-lucide="x"></i>
+      </button>
+      <div class="modal-image" id="modal-image">
+        <span class="ai-caption modal-ai-caption" id="modal-ai-caption" hidden>AI-generated picture</span>
+      </div>
+      <div class="modal-body">
+        <span class="project-tag" id="modal-tag"></span>
+        <h2 class="modal-title" id="modal-title"></h2>
+        <p class="modal-client" id="modal-client"></p>
+        <div class="modal-section">
+          <h4>The Challenge</h4>
+          <p id="modal-challenge"></p>
+        </div>
+        <div class="modal-section">
+          <h4>The Solution</h4>
+          <p id="modal-solution"></p>
+        </div>
+        <div class="modal-section">
+          <h4>The Result</h4>
+          <p id="modal-result"></p>
+        </div>
+        <a href="#contact" class="btn btn-small modal-cta">Start a Similar Project</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <h4>JNL Data Solution</h4>
+          <p>Specialized mobile apps and digital tools for wildlife conservation, field research, and community engagement.</p>
+          <p class="footer-specialist">Led by Jessica Nasica, Conservation Technology Specialist & Educator</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h5>Services</h5>
+            <a href="#services-1">Field Apps</a>
+            <a href="#services-2">Citizen Science</a>
+            <a href="#services-3">Digital Tracking</a>
+            <a href="#services-4">Data Management</a>
+            <a href="#services-5">Facility Management Systems</a>
+            <a href="#services-6">Training</a>
+          </div>
+          <div class="footer-column">
+            <h5>Connect</h5>
+            <a href="mailto:jessica.nasica@gmail.com">Email</a>
+            <a href="https://linkedin.com/in/jessicanasica" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/jessicanasica" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 JNL Data Solution &bull; France</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=2"></script>
+</body>
+</html>
