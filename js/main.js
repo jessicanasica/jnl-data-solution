@@ -328,28 +328,28 @@ function initProjectModals() {
   const projectData = {
     arm: {
       tag: 'Field Data Collection',
-      title: 'Complete Reserve Management System',
-      client: 'Nature Seychelles \u2022 Cousin Island Special Reserve',
+      title: 'ARM \u2014 App for Reserve Management',
+      client: 'Nature Seychelles \u2022 Cousin Island Special Reserve \u2022 SeyCCAT',
       imageBg: 'arm-bg',
       challenge: 'Field staff needed to track 11 different conservation activities\u2014from turtle patrols to seabird monitoring\u2014all on paper forms that took hours to transcribe. Data was often lost, delayed, or inconsistent.',
-      solution: 'Custom field app (ARM) covering all 11 conservation monitoring modules, running on rugged tablets designed for tropical field conditions. The app works completely offline, with GPS tracking, photo capture, and automatic data syncing when connectivity is available. Designed to eliminate paper forms entirely and reduce data processing time by 70%.',
-      result: 'Staff were trained in 4 weeks and now use tablets daily for all monitoring activities. ARM saves field teams 15-20 hours weekly, has eliminated 100% of paper forms, and generates reports automatically that previously took hours to compile manually. Data collection is faster and significantly more accurate.',
+      solution: 'ARM — a custom field app covering all 11 conservation monitoring modules, running on rugged tablets designed for tropical field conditions. The app works completely offline, with GPS tracking, photo capture, and automatic data syncing when connectivity is available. Designed to eliminate paper forms entirely and reduce data processing time by 70%. Built-in self-training content and step-by-step helpers guide wardens and volunteers through each workflow, reducing onboarding time. Data analysis is done in real time with AI-generated reports, helping science officers save time and giving decision-makers the insights they need faster.',
+      result: 'Staff were trained in 4 weeks and now use tablets daily for all monitoring activities. ARM saves field teams 15-20 hours weekly, has eliminated 100% of paper forms, and generates reports automatically that previously took hours to compile manually. Data collection and analysis is faster and significantly more accurate.',
     },
     wet: {
       tag: 'Citizen Science',
-      title: 'Community Environmental Monitoring',
-      client: 'Project details temporarily confidential \u2022 client and location withheld',
+      title: 'WETSAPP \u2014 Wetland Evaluation & Tracking Seychelles App',
+      client: 'Nature Seychelles \u2022 EU \u201cWetlands of Hope\u201d \u2022 SeyCCAT',
       imageBg: 'wet-bg',
-      challenge: 'Local communities wanted to participate in environmental monitoring, but needed a tool that non-experts could use without specialized training. The solution also needed to be available in the local language to ensure broad community participation.',
-      solution: 'A citizen science platform with simple photo-based data collection, available also in the local community language. The interface uses visual guides, location tagging, and an integrated image library that teaches participants what to look for and how to identify key environmental indicators.',
-      result: 'Community members are now contributing valuable environmental monitoring data without highly technical training. The built-in educational resources ensure data quality while building environmental literacy. The multilingual approach ensures inclusive participation across diverse community groups. Full project details and outcomes available upon request.'
+      challenge: 'Seychelles\u2019 wetland monitoring relied entirely on paper-based methods. Conservation partners needed a modern digital platform to collect real-time data on biodiversity, ecosystem health, and environmental threats across the islands\u2014accessible to field teams and community participants alike, including in Seychellois Creole.',
+      solution: 'WETSAPP\u2014the Wetland Evaluation and Tracking Seychelles App\u2014developed under the EU-funded \u201cWetlands of Hope\u201d initiative with additional support from SeyCCAT. Built in partnership with Nature Seychelles and the LEAP team, the app features 8 dedicated monitoring modules covering flora-fauna surveys, mangrove health assessments, biomass estimation, disturbance reporting, pollution tracking, wetland cleanups, and nursery monitoring. Available in Seychellois Creole, and English, WETSAPP empowers users to monitor wetlands in real time directly from smartphones and tablets\u2014gathering precise, actionable data on threats, vegetation, and ecosystem health. It works fully offline for remote wetland sites and syncs automatically when connectivity is available. Data analysis is done in real time with AI-generated reports. WETSAPP follows the successful rollout of the App for Reserve Management (ARM), which digitized conservation operations on Cousin Island Special Reserve.',
+      result: 'Officially launched on May 21, 2026 at L\u2019Escale Resort in the presence of the Minister of Environment, the CEO of SeyCCAT, and senior government officials. WETSAPP represents a major shift from paper-based record-keeping to a sophisticated digital platform now actively used for wetland monitoring across Seychelles. The bilingual interface ensures inclusive participation, and the built-in species identification guides and educational resources help users contribute high-quality data without specialized training. Close collaboration with the Ministry of Environment throughout the project and during the testing phase was instrumental to the app\u2019s success.'
     },
     tracking: {
       tag: 'Wildlife Tracking',
-      title: 'Automated Tortoise Tracking',
-      client: 'Nature Seychelles \u2022 Cousin Island',
+      title: 'ARM Extension \u2014 Automated GPS Tortoise Tracking',
+      client: 'Nature Seychelles \u2022 Cousin Island \u2022 SeyCCAT',
       imageBg: 'tracking-bg',
-      challenge: 'The reserve conservation team needed to track Aldabra giant tortoises across the entire reserve year-round.',
+      challenge: 'The reserve conservation team needed to track Aldabra giant tortoises across the entire reserve year-round with zero additional workload for wardens.',
       solution: 'A fully automated digital tracking system with custom geofencing alerts, long-term battery life, and little to no maintenance for years. The system uses technology designed for remote deployments and adapted to the particular terrain of the reserve. Real-time position data is displayed on a mapping dashboard.',
       result: 'Real-time tracking data reveals tortoise movement patterns, habitat preferences, and territorial behavior\u2014all without constant battery changes or human intervention. Geofencing alerts notify conservationists when animals move into certain areas.'
     },
