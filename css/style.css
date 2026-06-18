@@ -762,7 +762,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 
-.project-image img {
+.project-image img:not(.project-image-logo) {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -770,7 +770,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: transform var(--transition-slow);
 }
 
-.project-card:hover .project-image img {
+.project-card:hover .project-image img:not(.project-image-logo) {
   transform: scale(1.06);
 }
 
@@ -788,6 +788,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .project-image.coral-bg {
   background: linear-gradient(135deg, #38b2ac 0%, #2d8b85 100%);
+}
+
+.project-image-logo {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 8px;
+  z-index: 2;
+  pointer-events: none;
 }
 
 .project-image-overlay {
@@ -953,6 +965,43 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-text-light);
   line-height: 1.7;
   font-size: 0.95rem;
+}
+
+/* ============================================
+   PARTNERS SECTION
+   ============================================ */
+.partners-section {
+  padding: 80px 24px;
+  background: var(--color-bg-light);
+  text-align: center;
+}
+
+.partners-grid {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 48px;
+  margin-top: 32px;
+}
+
+.partner-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.partner-item img {
+  height: 72px;
+  width: auto;
+  object-fit: contain;
+}
+
+.partner-name {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  font-weight: 500;
 }
 
 /* ============================================
@@ -1269,49 +1318,147 @@ h1, h2, h3, h4, h5, h6 {
   pointer-events: none;
 }
 
-.modal-image {
+.modal-slideshow {
   position: relative;
-  height: 260px;
+  height: 280px;
   border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
+  background: var(--color-bg-light);
+}
+
+.slideshow-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slideshow-track img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.slideshow-track img.slide-active {
+  opacity: 1;
+}
+
+.slideshow-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.85);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 5;
+  opacity: 0;
+  transition: opacity var(--transition-fast), background var(--transition-fast);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.modal-slideshow:hover .slideshow-btn {
+  opacity: 1;
+}
+
+.slideshow-btn:hover {
+  background: white;
+}
+
+.slideshow-btn i,
+.slideshow-btn svg {
+  width: 18px;
+  height: 18px;
+  color: var(--color-text-dark);
+  stroke: var(--color-text-dark);
+}
+
+.slideshow-prev {
+  left: 10px;
+}
+
+.slideshow-next {
+  right: 10px;
+}
+
+.slideshow-dots {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 5;
+}
+
+.slideshow-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background var(--transition-fast), transform var(--transition-fast);
+}
+
+.slideshow-dot.active {
+  background: white;
+  transform: scale(1.25);
 }
 
 .modal-ai-caption {
   position: absolute;
   bottom: 12px;
   right: 12px;
+  z-index: 5;
 }
 
-.modal-image.arm-bg {
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.25)),
-                    url('../assets/images/arm-training-2.jpg');
+.modal-inline-image {
+  margin: 16px 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
 }
 
-.modal-image.wet-bg {
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.25)),
-                    url('../assets/images/mangrove-wetland.jpg');
-}
-
-.modal-image.tracking-bg {
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.25)),
-                    url('../assets/images/tortoise-tracking.jpg');
-}
-
-.modal-image.coral-bg {
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.25)),
-                    url('../assets/images/coral-facility-AI.png');
+.modal-inline-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-md);
 }
 
 .modal-body {
   padding: 32px;
 }
 
+.modal-title-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 12px 0 8px;
+}
+
+.modal-logo {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
 .modal-title {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--color-text-dark);
-  margin: 12px 0 8px;
+  margin: 0;
   line-height: 1.3;
 }
 
@@ -2080,4 +2227,61 @@ h1, h2, h3, h4, h5, h6 {
   .logo-dash {
     display: none;
   }
+}
+
+/* ============================================
+   TOAST NOTIFICATIONS
+   ============================================ */
+.toast-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  pointer-events: none;
+}
+
+.toast {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+  border-radius: var(--radius-md);
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  pointer-events: auto;
+  animation: toast-in 0.35s ease forwards;
+  max-width: 380px;
+}
+
+.toast--success {
+  background: #2d5f5d;
+}
+
+.toast--error {
+  background: #c0392b;
+}
+
+.toast svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.toast.toast-out {
+  animation: toast-out 0.3s ease forwards;
+}
+
+@keyframes toast-in {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes toast-out {
+  from { opacity: 1; transform: translateY(0); }
+  to   { opacity: 0; transform: translateY(16px); }
 }

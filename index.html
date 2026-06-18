@@ -16,8 +16,11 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
   <!-- Styles -->
-  <link rel="stylesheet" href="css/style.css?v=21">
+  <link rel="stylesheet" href="css/style.css?v=22">
   <style>
     /* Fix: modal overlay was blocking all clicks on the page */
     .modal-overlay { pointer-events: none !important; }
@@ -59,9 +62,6 @@
             <img src="assets/slideshow/slide-2.jpg" alt="Field Testing of the ARM app on Cousin Island">
           </div>
           <div class="slide">
-            <img src="assets/slideshow/slide-7blur.png" alt="Field data collection on Cousin Island Special Reserve">
-          </div>
-          <div class="slide">
             <img src="assets/slideshow/slide-4.jpg" alt="Wildlife monitoring with the ARM app">
           </div>
           <div class="slide">
@@ -72,6 +72,30 @@
           </div>
           <div class="slide">
             <img src="assets/slideshow/slide-3b.png" alt="Reporting with NGO Nature Seychelles">
+          </div>
+          <div class="slide">
+            <img src="assets/images/mangrove-wetsapp4.png" alt="WETSAPP interface on smartphone">
+          </div>
+          <div class="slide">
+            <img src="assets/images/tracking-7a.png" alt="LoRaWAN gateway on Cousin Island">
+          </div>
+          <div class="slide">
+            <img src="assets/images/mangrove-wetsapp2a.png" alt="WETSAPP field survey">
+          </div>
+          <div class="slide">
+            <img src="assets/images/tracking-5b.png" alt="Tortoise tracker setup">
+          </div>
+          <div class="slide">
+            <img src="assets/images/arm-10.jpeg" alt="ARM app on tablet in the field">
+          </div>
+          <div class="slide">
+            <img src="assets/images/tracking-2.JPG" alt="Tortoise tracker setup">
+          </div>
+          <div class="slide">
+            <img src="assets/images/mangrove-wetsapp3.png" alt="Community citizen science event">
+          </div>
+          <div class="slide">
+            <img src="assets/images/arm-5.jpeg" alt="ARM app on tablet in the field">
           </div>
         </div>
         <div class="slideshow-overlay"></div>
@@ -333,7 +357,7 @@
           <!-- Project 1: ARM -->
           <div class="project-card" data-project="arm" tabindex="0" role="button" aria-label="View ARM project details">
             <div class="project-image arm-bg">
-              <img src="assets/images/arm-training.jpg" alt="Field staff training with tablets on Cousin Island beach" loading="lazy">
+              <img src="assets/images/arm-image1.png" alt="Field staff training with tablets on Cousin Island beach" loading="lazy">
               <div class="project-image-overlay">
                 <span class="project-view-label"><i data-lucide="expand"></i> View Case Study</span>
               </div>
@@ -345,14 +369,14 @@
               </div>
               <h3 class="project-title">ARM &mdash; App for Reserve Management</h3>
               <p class="project-client">Nature Seychelles &bull; Cousin Island &bull; SeyCCAT</p>
-              <p class="project-summary"><strong>The Challenge:</strong> Field staff needed to track 11 different conservation activities—all on paper forms that took hours to transcribe.</p>
+              <p class="project-summary">Clipboards and paper forms were costing Cousin Island&rsquo;s wardens hours every week. <strong>ARM replaced 11 conservation workflows with a single field app</strong> &mdash; built for the tropics, working offline, and saving 15&ndash;20 hours a week.</p>
             </div>
           </div>
 
           <!-- Project 2: WET -->
           <div class="project-card" data-project="wet" tabindex="0" role="button" aria-label="View WET project details">
             <div class="project-image wet-bg">
-              <img src="assets/images/mangrove-wetland.jpg" alt="Aerial view of mangrove wetland and coastline" loading="lazy">
+              <img src="assets/images/mangrove-wetsapp.jpeg" alt="Aerial view of mangrove wetland and coastline" loading="lazy">
               <div class="project-image-overlay">
                 <span class="project-view-label"><i data-lucide="expand"></i> View Case Study</span>
               </div>
@@ -364,7 +388,7 @@
               </div>
               <h3 class="project-title">WETSAPP &mdash; Wetland Evaluation &amp; Tracking Seychelles App</h3>
               <p class="project-client">Nature Seychelles &bull; EU &ldquo;Wetlands of Hope&rdquo; &bull; SeyCCAT</p>
-              <p class="project-summary"><strong>The Challenge:</strong> Seychelles&rsquo; wetland monitoring relied on paper-based methods, and partners needed a modern digital tool to collect real-time data on biodiversity, ecosystem health, and threats across the islands.</p>
+              <p class="project-summary">Seychelles&rsquo; wetlands were being monitored with clipboards and paper forms &mdash; until now. <strong>WETSAPP puts real-time biodiversity tracking directly in the hands of field teams and local communities</strong>, from smartphone to mangrove.</p>
             </div>
           </div>
 
@@ -372,6 +396,7 @@
           <div class="project-card" data-project="tracking" tabindex="0" role="button" aria-label="View Digital Tracking project details">
             <div class="project-image tracking-bg">
               <img src="assets/images/tortoise-tracking.jpg" alt="Researcher using tablet to track Aldabra giant tortoise" loading="lazy">
+              <img src="assets/images/arm-logo.png" alt="ARM logo" class="project-image-logo">
               <div class="project-image-overlay">
                 <span class="project-view-label"><i data-lucide="expand"></i> View Case Study</span>
               </div>
@@ -383,7 +408,7 @@
               </div>
               <h3 class="project-title">ARM Extension &mdash; Automated GPS Tortoise Tracking</h3>
               <p class="project-client">Nature Seychelles &bull; Cousin Island &bull; SeyCCAT</p>
-              <p class="project-summary"><strong>The Challenge:</strong> The reserve conservation team needed to track Aldabra giant tortoises across the entire reserve year-round with zero additional workload for wardens.</p>
+              <p class="project-summary">Aldabra giant tortoises roam freely across Cousin Island &mdash; and keeping track of them manually was simply impossible year-round. <strong>ARM now tracks some tortoises automatically via GPS</strong>, with zero extra workload for wardens.</p>
             </div>
           </div>
 
@@ -441,6 +466,31 @@
       </div>
     </section>
 
+    <!-- Partners Section -->
+    <section class="partners-section">
+      <div class="container">
+        <h2 class="section-title section-title--teal">Trusted By</h2>
+        <div class="partners-grid">
+          <div class="partner-item">
+            <img src="assets/images/nature_seychelles.png" alt="Nature Seychelles" loading="lazy">
+            <span class="partner-name">Nature Seychelles</span>
+          </div>
+          <div class="partner-item">
+            <img src="assets/images/seyccat.png" alt="SeyCCAT" loading="lazy">
+            <span class="partner-name">SeyCCAT (Seychelles)</span>
+          </div>
+          <div class="partner-item">
+            <img src="assets/images/eu_logo.png" alt="European Union" loading="lazy">
+            <span class="partner-name">European Union</span>
+          </div>
+          <div class="partner-item">
+            <img src="assets/images/leap_logo.png" alt="LEAP" loading="lazy">
+            <span class="partner-name">LEAP (Seychelles)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="cta-section">
       <div class="container">
@@ -463,7 +513,7 @@
     <section id="contact" class="contact-section">
       <div class="container">
         <h2 class="section-title section-title--teal">Get in Touch</h2>
-        <p class="section-intro">Tell us about your project and we'll get back to you within 24 hours.</p>
+        <p class="section-intro">Tell us about your project and we'll get back to you within 72 hours.</p>
 
         <form id="contact-form" class="contact-form" novalidate>
           <div class="form-row">
@@ -527,7 +577,7 @@
           </button>
           <div class="success-message" role="status" hidden>
             <i data-lucide="check-circle"></i>
-            <span>Thanks! We'll respond within 24 hours.</span>
+            <span>Thanks! We'll respond within 72 hours.</span>
           </div>
         </form>
       </div>
@@ -541,12 +591,23 @@
       <button class="modal-close" aria-label="Close modal">
         <i data-lucide="x"></i>
       </button>
-      <div class="modal-image" id="modal-image">
+      <div class="modal-slideshow" id="modal-slideshow">
+        <div class="slideshow-track" id="slideshow-track"></div>
+        <button class="slideshow-btn slideshow-prev" id="slideshow-prev" aria-label="Previous image">
+          <i data-lucide="chevron-left"></i>
+        </button>
+        <button class="slideshow-btn slideshow-next" id="slideshow-next" aria-label="Next image">
+          <i data-lucide="chevron-right"></i>
+        </button>
+        <div class="slideshow-dots" id="slideshow-dots"></div>
         <span class="ai-caption modal-ai-caption" id="modal-ai-caption" hidden>AI-generated picture</span>
       </div>
       <div class="modal-body">
         <span class="project-tag" id="modal-tag"></span>
-        <h2 class="modal-title" id="modal-title"></h2>
+        <div class="modal-title-row">
+          <img class="modal-logo" id="modal-logo" src="" alt="" hidden>
+          <h2 class="modal-title" id="modal-title"></h2>
+        </div>
         <p class="modal-client" id="modal-client"></p>
         <div class="modal-section">
           <h4>The Challenge</h4>
@@ -560,7 +621,10 @@
           <h4>The Result</h4>
           <p id="modal-result"></p>
         </div>
-        <a href="#contact" class="btn btn-small modal-cta">Start a Similar Project</a>
+        <div class="modal-inline-image" id="modal-inline-image" hidden>
+          <img src="" alt="" loading="lazy">
+        </div>
+        <a href="mailto:jessicanasica@gmail.com?subject=Inquiry%20%E2%80%94%20Digital%20Conservation%20Project" class="btn btn-small modal-cta">Start a Similar Project</a>
       </div>
     </div>
   </div>
@@ -598,6 +662,9 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=2"></script>
+  <!-- Toast Notifications -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <script src="js/main.js?v=3"></script>
 </body>
 </html>
