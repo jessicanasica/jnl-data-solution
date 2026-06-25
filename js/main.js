@@ -420,6 +420,7 @@ function initProjectModals() {
     coral: {
       tag: 'Facility Management',
       title: 'Conservation Facility Management System',
+      // logo: 'assets/images/arc-logo.png', // TODO: uncomment once NDA lifts and ARC branding is approved
       client: 'Project details temporarily confidential • client and location withheld',
       images: [
         { src: 'assets/images/coral-facility-AI.png', alt: 'Coral nursery facility overview', aiGenerated: true },
