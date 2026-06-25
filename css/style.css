@@ -58,6 +58,10 @@ img {
   display: block;
 }
 
+img[hidden] {
+  display: none;
+}
+
 a {
   color: inherit;
   text-decoration: none;
